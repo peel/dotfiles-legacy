@@ -1,0 +1,89 @@
+[submodule ".vim/bundle/vim-powerline"]
+path =.vim/bundle/vim-powerline
+url = http://github.com/Lokaltog.vim-powerline.git
+ignore = untracked
+[submodule ".vim/bundle/vim-surround"]
+path =.vim/bundle/vim-surround
+url = http://github.com/tpopt.vim-surround.git
+ignore = untracked
+[submodule ".vim/bundle/delimitMate"]
+path =.vim/bundle/delimitMate
+url = http://github.com/Raimondi/delimitMate.git
+ignore = untracked
+[submodule ".vim/bundle/supertab"]
+path =.vim/bundle/supertab
+url = http://github.com/ervandew/supertab.git
+ignore = untracked
+[submodule ".vim/bundle/nerdcommenter"]
+path =.vim/bundle/nerdcommenter
+url = http://github.com/scrooloose/nerdcommenter.git
+ignore = untracked
+[submodule ".vim/bundle/rainbow"]
+path =.vim/bundle/rainbow
+url = http://github.com/Soares/rainbow.git
+ignore = untracked
+[submodule ".vim/bundle/play2vim"]
+path =.vim/bundle/play2vim
+url = http://github.com/gre/play.vim.git
+ignore = untracked
+[submodule ".vim/bundle/html5"]
+path =.vim/bundle/html5
+url = http://github.com/othree/html5.git
+ignore = untracked
+[submodule ".vim/bundle/tslime.vim"]
+path =.vim/bundle/tslime.vim
+url = http://github.com/kikijump/tslime.vim.git
+ignore = untracked
+[submodule ".vim/bundle/javax-javadoc-vim"]
+path =.vim/bundle/javax-javadoc-vim
+url = http://github.com/davetron5000/javax-javadoc.vim.git
+ignore = untracked
+[submodule ".vim/bundle/xml.vim"]
+path =.vim/bundle/xml.vim
+url = http://github.com/othree/xml.vim.git
+ignore = untracked
+[submodule ".vim/bundle/vim-indent-guides"]
+path =.vim/bundle/vim-indent-guides
+url = http://github.com/mutewinter.vim-indent-guides.git
+ignore = untracked
+[submodule ".vim/bundle/syntastic"]
+path =.vim/bundle/syntastic
+url = http://github.com/scrooloose/syntastic.git
+ignore = untracked
+[submodule ".vim/bundle/snipmate.vim"]
+path =.vim/bundle/snipmate.vim
+url = http://github.com/msanders/snipmate.vim.git
+ignore = untracked
+[submodule ".vim/bundle/TagHighlight"]
+path =.vim/bundle/TagHighlight
+url = http://github.com/abudden/TagHighlight.git
+ignore = untracked
+[submodule ".vim/bundle/nerdtree"]
+path =.vim/bundle/nerdtree
+url = http://github.com/scrooloose/nerdtree.git
+ignore = untracked
+[submodule ".vim/bundle/tagbar"]
+path =.vim/bundle/tagbar
+url = http://github.com/majutsushu/tagbar.git
+ignore = untracked
+[submodule ".vim/bundle/vim-fugitive"]
+path =.vim/bundle/vim-fugitive
+url = http://github.com/tpope.vim-fugitive.git
+ignore = untracked
+[submodule ".vim/bundle/vjde"]
+path =.vim/bundle/vjde
+url = http://github.com/cespare/vjde.git
+ignore = untracked
+[submodule ".vim/bundle/molokai"]
+path =.vim/colors/molokai
+url = http://github.com/tomasr/molokai.git
+ignore = untracked
+[submodule ".zsh/zsh-syntax-highlighting"]
+path = .zsh/zsh-syntax-highlighting 
+url = http://github.com/zsh-users/zsh-syntax-highlighting.git
+ignore = untracked
+[submodule "autojump"]
+path =.zsh/autojump
+url = git://github.com/joelthelion/autojump.git
+ignore = untracked
+
