@@ -42,9 +42,9 @@ set nolist 			" Display unprintable characters f12 - switches
 " set listchars=tab:·\ ,eol:¶,trail:·,extends:»,precedes:« " Unprintable chars mapping
 
 set foldenable 			" Turn on folding
-set foldmethod=marker 		" Fold on the marker
-set foldlevel=100 		" Don't autofold anything (but I can still fold manually)
-set foldopen=block,hor,mark,percent,quickfix,tag " what movements open folds 
+set foldcolumn=1
+set foldmethod=indent " Fold on syntax
+set foldlevel=2 " Don't autofold anything (but I can still fold manually)
 
 set mouse-=a   			" Disable mouse
 set mousehide  			" Hide mouse after chars typed
