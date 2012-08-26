@@ -41,7 +41,7 @@ tools:
     #}
 
     #Brew kegs{
-        brew install git ctags                #general purpose kegs
+        brew install git ctags-exuberant      #general purpose kegs
         brew install sbt scala                #scala kegs
         brew install maven                    #java kegs
         brew install jboss glassfish tomcat   #server stuff
