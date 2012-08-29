@@ -63,6 +63,15 @@
     set cursorline! cursorcolumn!
     " :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
+    " Indentation {
+        set autoindent " Preserve current indent on new lines
+        set cindent " set C style indent
+        set expandtab " Convert all tabs typed to spaces
+        set softtabstop=4 " Indentation levels every four columns
+        set shiftwidth=4 " Indent/outdent by four columns
+        set shiftround " Indent/outdent to nearest tabstop
+    " }
+
     syntax on
     colorscheme molokai
 " }
@@ -85,12 +94,11 @@
     Bundle 'gmarik/vundle'
 
     " Utility{
+        Bundle 'wincent/command-t'
         Bundle 'Lokaltog/vim-powerline'
         Bundle 'tpope/vim-surround'
-        Bundle 'Raimondi/delimitMate'
         Bundle 'ervandew/supertab'
         Bundle 'vim-scripts/java.vim'
-        Bundle 'scrooloose/nerdcommenter'
         Bundle 'Soares/rainbow.vim'
         Bundle 'gre/play2vim'
         Bundle 'othree/html5.vim'
@@ -99,9 +107,15 @@
         Bundle 'othree/xml.vim'
     " }
 
+    " Graphic Undo{
+        Bundle 'sjl/gundo.vim'
+        nnoremap <silent> <F6> :GundoToggle<CR>
+    " } 
+
     " Indent Guides{
         Bundle 'mutewinter/vim-indent-guides'
         let g:indent_guides_start_level=2
+        let g:indent_guides_enable_on_vim_startup=1
         let g:indent_guides_guide_size=1
     " }
 
@@ -109,27 +123,104 @@
         Bundle 'scrooloose/syntastic'
         let g:syntastic_enable_signs=1
         let g:syntastic_auto_loc_list=1
+        nnoremap <Leader>s :Errors<CR>
+        let g:syntastic_check_on_open=1
+        let g:syntastic_auto_jump=1
+        let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
     " }
 
-    " SnipMate
-    Bundle 'msanders/snipmate.vim'
+    " delimitMate
+        Bundle 'Raimondi/delimitMate'
+        let delimitMate_expand_cr=1
+        let delimitMate_expand_space=1
+        let delimitMate_balance_matchpairs=1
+    " }
 
-    " TagHighlight
-    Bundle 'abudden/TagHighlight'
+    " SnipMate{
+        Bundle 'msanders/snipmate.vim'
+        let g:snips_trigger_key=',,s'
+        let g:snips_trigger_key_backwards=',,s'
+        snoremap <CR> a<BS>
+        snoremap <BS> a<BS>
+        snoremap <right> <ESC>a
+        snoremap <left> <ESC>bi
+        snoremap ' a<BS>'
+        snoremap ` a<BS>`
+        snoremap % a<BS>%
+        snoremap U a<BS>U
+        snoremap ^ a<BS>^
+        snoremap \ a<BS>\
+        snoremap <C-x> a<BS><c-x>` `' '
+    " }
+
+    " NERDCommenter{
+        Bundle 'scrooloose/nerdcommenter'
+        let NERDCommentWholeLinesInVMode=2
+        let NERDSpaceDelims=1
+        let NERDRemoveExtraSpaces=1
+    " }
 
     " NERDTree{
         Bundle 'scrooloose/nerdtree' 
-        nmap <silent> <Leader><F5> :NERDTreeToggle<CR>
+        nnoremap <Leader>d :NERDTreeTabsToggle<CR>
+        nnoremap <Leader>f :NERDTreeFind<CR>
+        let NERDTreeChDirMode=2
+        let NERDTreeShowBookmarks=1
+        let NERDTreeShowHidden=1
+        let NERDTreeShowLineNumbers=1
+        let NERDTreeDirArrows=1
     "}
+
+    " GoldenRatio {
+        Bundle 'roman/golden-ratio'
+        if &diff  " disable golden ration in diff
+              let g:loaded_golden_ratio=1
+        endif
+    " }
+
+    " EasyTags{
+        Bundle 'xolox/vim-easytags'
+        function! InitializeTagDirectory()
+            let parent=$HOME
+            let prefix='.vim'
+            let dirname='tags'
+            let directory=parent.'/'.prefix.'/'.dirname.'/'
+            if !isdirectory(directory)
+                if exists('*mkdir')
+                    call mkdir(directory)
+                    let g:easytags_by_filetype=directory
+                else
+                    echo "Warning: Unable to create directory: ".directory
+                    echo "Try: mkdir -p ".directory
+                endif
+            else
+                let g:easytags_by_filetype=directory
+            endif
+        endfunction
+        call InitializeTagDirectory()
+        let g:easytags_python_enabled=1
+        let g:easytags_python_script=1
+        let g:easytags_include_members=1
+        highlight cMember gui=italic
+    " }
+    
+    " TagHighlight
+        Bundle 'abudden/TagHighlight'
 
     " Tagbar{
         Bundle 'majutsushi/tagbar'
         let g:tagbar_ctags_bin='/usr/local/Cellar/ctags/5.8/bin/ctags'
-        nmap <silent>  <F5> :TagbarToggle<CR>
+        let g:tagbar_autofocus=1
+        let g:tagbar_expand=1
+        let g:tagbar_foldlevel=2
+        let g:tagbar_ironchars=['▾', '▸']
+        let g:tagbar_autoshowtag=1
+        nmap <silent>  <Leader> t :TagbarToggle<CR>
     "}
 
     " Git
-    Bundle 'tpope/vim-fugitive'
+        Bundle 'tpope/vim-fugitive'
 
     " VJDE{
         Bundle 'cespare/vjde'
@@ -151,8 +242,6 @@
 " }
 
 " Java{
-    " take care of indents for Java.
-    set autoindent
     set si
     set shiftwidth=4
 
