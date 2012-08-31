@@ -37,7 +37,7 @@ tools:
     #}
 
     #Shell{
-        brew install tmux midnight-commander
+        brew install tmux midnight-commander lynx
     #}
 
     #Brew kegs{

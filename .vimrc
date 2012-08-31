@@ -102,9 +102,14 @@
         Bundle 'Soares/rainbow.vim'
         Bundle 'gre/play2vim'
         Bundle 'othree/html5.vim'
-        Bundle 'kikijump/tslime.vim'
         Bundle 'davetron5000/javax-javadoc-vim'
         Bundle 'othree/xml.vim'
+        Bundle 'kien/ctrlp.vim'
+        Bundle 'dareni/vim-maven-ide'
+    " }
+
+    " vimux{
+        Bundle 'benmills/vimux'
     " }
 
     " Graphic Undo{
@@ -166,7 +171,7 @@
 
     " NERDTree{
         Bundle 'scrooloose/nerdtree' 
-        nnoremap <Leader>d :NERDTreeTabsToggle<CR>
+        nnoremap <Leader>d :NERDTreeToggle<CR>
         nnoremap <Leader>f :NERDTreeFind<CR>
         let NERDTreeChDirMode=2
         let NERDTreeShowBookmarks=1
