@@ -105,7 +105,6 @@
         Bundle 'davetron5000/javax-javadoc-vim'
         Bundle 'othree/xml.vim'
         Bundle 'kien/ctrlp.vim'
-        Bundle 'dareni/vim-maven-ide'
     " }
 
     " vimux{
@@ -230,15 +229,27 @@
     " Git
         Bundle 'tpope/vim-fugitive'
 
-    " VJDE{
-        Bundle 'cespare/vjde'
-        let g:vjde_completion_key='<c-space>'
-        let g:jde_tab_cfu=1
-        let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
-        let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
-        let g:vjde_utils_setup=0
-        let g:enable_floatingwindow=1
-    "}
+    " Coding style bee-atch{
+        Bundle 'vim-scripts/pmd.vim' 
+        Bundle 'vim-scripts/'
+    " }
+
+    " Maven-ide related {
+        Bundle 'vim-scripts/asynccommand'
+        Bundle 'vim-scripts/yavdb'
+        Bundle 'vim-scripts/project.vim'
+        Bundle 'dareni/vim-maven-ide'
+
+        " VJDE{
+            Bundle 'cespare/vjde'
+            let g:vjde_completion_key='<c-space>'
+            let g:jde_tab_cfu=1
+            let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
+            let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
+            let g:vjde_utils_setup=0
+            let g:enable_floatingwindow=1
+        "}
+    " }
 
     " Colors
     Bundle 'tomasr/molokai'
