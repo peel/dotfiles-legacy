@@ -49,6 +49,9 @@ tools:
         brew install scalate akka giter8      #frameworks
     #}
 
+    #Setup aliases{
+        alias lynx="lynx -vikeys -tna -nocolor -number_fields" 
+    #}
 #}
 
 #Install{

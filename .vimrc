@@ -11,6 +11,7 @@
     autocmd FileType java set tags=~/.vim/tags/java.tags
     set tags=~/.vim/tags/.tags;$HOME 		" walk directory tree upto $HOME looking for tags
     map <C-`> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+    let mapleader = ","
 
     " Match and search{
         set hlsearch    		" highlight search
@@ -31,8 +32,6 @@
     set ruler			" show the cursor position all the time
     set showcmd			" display incomplete commands
     set incsearch			" do incremental searching
-    set laststatus=2		" always display statusline for PowerLine
-    let g:Powerline_symbols='fancy'
 
     set showmatch  			" Show matching brackets.
     set matchtime=5  		" Bracket blinking.
@@ -94,18 +93,29 @@
     Bundle 'gmarik/vundle'
 
     " Utility{
-        Bundle 'wincent/command-t'
-        Bundle 'Lokaltog/vim-powerline'
         Bundle 'tpope/vim-surround'
         Bundle 'ervandew/supertab'
         Bundle 'vim-scripts/java.vim'
         Bundle 'Soares/rainbow.vim'
-        Bundle 'gre/play2vim'
         Bundle 'othree/html5.vim'
         Bundle 'davetron5000/javax-javadoc-vim'
         Bundle 'othree/xml.vim'
-        Bundle 'kien/ctrlp.vim'
+        Bundle 'vim-scripts/AutoComplPop'
     " }
+
+    " ctrlp{
+        Bundle 'kien/ctrlp.vim'
+        set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+        set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+        
+        let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
+    "}
+
+    " vim-powerline{
+        Bundle 'Lokaltog/vim-powerline'
+        set laststatus=2		" always display statusline for PowerLine
+        let g:Powerline_symbols='fancy'
+    "}
 
     " vimux{
         Bundle 'benmills/vimux'
@@ -171,7 +181,6 @@
     " NERDTree{
         Bundle 'scrooloose/nerdtree' 
         nnoremap <Leader>d :NERDTreeToggle<CR>
-        nnoremap <Leader>f :NERDTreeFind<CR>
         let NERDTreeChDirMode=2
         let NERDTreeShowBookmarks=1
         let NERDTreeShowHidden=1
@@ -231,13 +240,11 @@
 
     " Coding style bee-atch{
         Bundle 'vim-scripts/pmd.vim' 
-        Bundle 'vim-scripts/'
     " }
 
     " Maven-ide related {
-        Bundle 'vim-scripts/asynccommand'
         Bundle 'vim-scripts/yavdb'
-        Bundle 'vim-scripts/project.vim'
+        Bundle 'vim-scripts/project.tar.gz'
         Bundle 'dareni/vim-maven-ide'
 
         " VJDE{
