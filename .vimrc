@@ -1,5 +1,8 @@
 " Global{
     filetype plugin on
+    filetype indent on
+    filetype on
+    set ofu=syntaxcomplete#Complete
     set nocompatible
     set history=256 		" Number of things to remember in history.
     set autowrite  			" Writes on make/shell commands
@@ -8,7 +11,6 @@
     set timeoutlen=250  		" Time to wait after ESC (default causes an annoying delay)
     set clipboard+=unnamed  	" Yanks go on clipboard instead.
     set pastetoggle=<F10> 		" toggle between paste and normal: for 'safer' pasting from keyboard
-    autocmd FileType java set tags=~/.vim/tags/java.tags
     set tags=~/.vim/tags/.tags;$HOME 		" walk directory tree upto $HOME looking for tags
     map <C-`> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
     let mapleader = ","
@@ -262,7 +264,7 @@
         Bundle 'dareni/vim-maven-ide'
 
         " VJDE{
-            Bundle 'cespare/vjde'
+            Bundle 'vim-scripts/Vim-JDE'
             let g:vjde_completion_key='<c-space>'
             let g:jde_tab_cfu=1
             let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
@@ -282,6 +284,10 @@
 " }
 
 " Java{
+    autocmd FileType java set cfu=VjdeCompletionFun
+    let g:vjde_completion_key='<tab>'
+
+    autocmd FileType java set tags=~/.vim/tags/java.tags
     set si
     set shiftwidth=4
 
