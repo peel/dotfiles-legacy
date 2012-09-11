@@ -1,5 +1,5 @@
 " Global{
-    filetype off
+    filetype plugin on
     set nocompatible
     set history=256 		" Number of things to remember in history.
     set autowrite  			" Writes on make/shell commands
@@ -71,6 +71,9 @@
         set shiftround " Indent/outdent to nearest tabstop
     " }
 
+    set wildmenu
+    set wildmode=list:longest,full
+
     syntax on
     colorscheme molokai
 " }
@@ -102,6 +105,17 @@
         Bundle 'othree/xml.vim'
         Bundle 'vim-scripts/AutoComplPop'
     " }
+
+    " ruby{
+        Bundle 'kchmck/vim-coffee-script' 
+        Bundle 'vim-ruby/vim-ruby' 
+       
+        autocmd Filetype ruby iabbr cls class<CR>end<ESC>?class<ESC>$a
+        autocmd Filetype ruby iabbr mod module<CR>end<ESC>?module<ESC>$a
+        autocmd Filetype ruby iabbr d= def<CR>end<ESC>?def<ESC>$a
+        autocmd Filetype ruby iabbr d_ do<CR>end<ESC>O
+        autocmd Filetype ruby iabbr d- do \|\|<CR>end<ESC>k$i
+    "}
 
     " ctrlp{
         Bundle 'kien/ctrlp.vim'
