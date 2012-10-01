@@ -74,7 +74,6 @@
     " }
 
     set wildmenu
-    set wildmode=list:longest,full
 
     syntax on
     colorscheme molokai
@@ -251,6 +250,10 @@
         nmap <silent>  <Leader> t :TagbarToggle<CR>
     "}
 
+    " Session management like a boss{
+        Bundle 'xolox/vim-session'
+    " }
+
     " Git
         Bundle 'tpope/vim-fugitive'
 
@@ -283,7 +286,14 @@
     nmap <C-t> :tabnew<CR>
 " }
 
+" Scala {
+    autocmd BufRead,BufNewFile *.scala set ft=scala syntax=scala
+    Bundle 'derekwyatt/vim-scala'
+    Bundle 'gre/play2vim'
+" }
+
 " Java{
+    autocmd FileType java let g:SuperTabDefaultCompletionType="<c-x><c-u>" 
     autocmd FileType java set cfu=VjdeCompletionFun
     let g:vjde_completion_key='<tab>'
 

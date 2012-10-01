@@ -1,4 +1,4 @@
-# Peel environment configuration and all that
+ Peel environment configuration and all that
 # distributed under Apache Licence
 
 #Preconfig{
@@ -21,40 +21,41 @@ unlink: $(SOFT)
 
 #Update repository{
 update:
-    git submodule update --init
-    git pull --recurse-submodules --rebase
-    git submodule foreach git reset --hard
-    git submodule foreach git checkout master
-    git submodule foreach git pull --rebase
-    git push
-}
+git submodule update --init
+git pull --recurse-submodules --rebase
+git submodule foreach git reset --hard
+git submodule foreach git checkout master
+git submodule foreach git pull --rebase
+git push
+#}
 
 #Tools{
 tools:
-    #Preconditions{
-        chsh -s /bin/zsh              #use zsh instead of bash
-        mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew  #homebrew
-    #}
+#Preconditions{
+		chsh -s /bin/zsh              #use zsh instead of bash
+		mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew  #homebrew
+#}
 
-    #Shell{
-        brew install tmux midnight-commander lynx
-    #}
+#Shell{
+		brew install tmux midnight-commander lynx
+		gem install tmuxinator
+#}
 
-    #Brew kegs{
-        brew install git ctags-exuberant      #general purpose kegs
-        brew install sbt scala                #scala kegs
-        brew install maven                    #java kegs
-        brew install jboss glassfish tomcat   #server stuff
-        brew install mongodb                  #database stuff
-        brew install scalate akka giter8      #frameworks
-    #}
+#Brew kegs{
+		brew install git ctags-exuberant      #general purpose kegs
+		brew install sbt scala                #scala kegs
+		brew install maven                    #java kegs
+		brew install jboss glassfish tomcat   #server stuff
+		brew install mongodb                  #database stuff
+		brew install scalate akka giter8      #frameworks
+#}
 
-    #Setup aliases{
-        alias lynx="lynx -vikeys -tna -nocolor -number_fields" 
-    #}
+#Setup aliases{
+		alias lynx="lynx -vikeys -tna -nocolor -number_fields" 
+#}
 #}
 
 #Install{
 install: 
-    link update tools
+link update tools
 #}

@@ -1,0 +1,144 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<C-t>	/Users/peel/.dotfiles/.vimrc	/^    nmap <C-t> :tabnew<CR>$/;"	m	language:Vim
+<C-t>	/Users/peel/.vimrc	/^    nmap <C-t> :tabnew<CR>$/;"	m	language:Vim
+<C-U>	/Users/peel/.dotfiles/.vimrc	/^inoremap <C-U> <C-G>u<C-U>$/;"	m	language:Vim
+<C-U>	/Users/peel/.vimrc	/^inoremap <C-U> <C-G>u<C-U>$/;"	m	language:Vim
+<C-`>	/Users/peel/.dotfiles/.vimrc	/^    map <C-`> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>$/;"	m	language:Vim
+<C-`>	/Users/peel/.vimrc	/^    map <C-`> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>$/;"	m	language:Vim
+<Down>	/Users/peel/.dotfiles/.vimrc	/^    inoremap  <Down>   <NOP>$/;"	m	language:Vim
+<Down>	/Users/peel/.dotfiles/.vimrc	/^    noremap   <Down>   <NOP>$/;"	m	language:Vim
+<Down>	/Users/peel/.vimrc	/^    inoremap  <Down>   <NOP>$/;"	m	language:Vim
+<Down>	/Users/peel/.vimrc	/^    noremap   <Down>   <NOP>$/;"	m	language:Vim
+<F6>	/Users/peel/.dotfiles/.vimrc	/^        nnoremap <silent> <F6> :GundoToggle<CR>$/;"	m	language:Vim
+<F6>	/Users/peel/.vimrc	/^        nnoremap <silent> <F6> :GundoToggle<CR>$/;"	m	language:Vim
+<Leader>	/Users/peel/.dotfiles/.vimrc	/^        nmap <silent>  <Leader> t :TagbarToggle<CR>$/;"	m	language:Vim
+<Leader>	/Users/peel/.vimrc	/^        nmap <silent>  <Leader> t :TagbarToggle<CR>$/;"	m	language:Vim
+<Leader>d	/Users/peel/.dotfiles/.vimrc	/^        nnoremap <Leader>d :NERDTreeToggle<CR>$/;"	m	language:Vim
+<Leader>d	/Users/peel/.vimrc	/^        nnoremap <Leader>d :NERDTreeToggle<CR>$/;"	m	language:Vim
+<Leader>s	/Users/peel/.dotfiles/.vimrc	/^        nnoremap <Leader>s :Errors<CR>$/;"	m	language:Vim
+<Leader>s	/Users/peel/.vimrc	/^        nnoremap <Leader>s :Errors<CR>$/;"	m	language:Vim
+<Left>	/Users/peel/.dotfiles/.vimrc	/^    inoremap  <Left>   <NOP>$/;"	m	language:Vim
+<Left>	/Users/peel/.dotfiles/.vimrc	/^    noremap   <Left>   <NOP>$/;"	m	language:Vim
+<Left>	/Users/peel/.vimrc	/^    inoremap  <Left>   <NOP>$/;"	m	language:Vim
+<Left>	/Users/peel/.vimrc	/^    noremap   <Left>   <NOP>$/;"	m	language:Vim
+<Right>	/Users/peel/.dotfiles/.vimrc	/^    inoremap  <Right>  <NOP>$/;"	m	language:Vim
+<Right>	/Users/peel/.dotfiles/.vimrc	/^    noremap   <Right>  <NOP>$/;"	m	language:Vim
+<Right>	/Users/peel/.vimrc	/^    inoremap  <Right>  <NOP>$/;"	m	language:Vim
+<Right>	/Users/peel/.vimrc	/^    noremap   <Right>  <NOP>$/;"	m	language:Vim
+<Up>	/Users/peel/.dotfiles/.vimrc	/^    inoremap  <Up>     <NOP>$/;"	m	language:Vim
+<Up>	/Users/peel/.dotfiles/.vimrc	/^    noremap   <Up>     <NOP>$/;"	m	language:Vim
+<Up>	/Users/peel/.vimrc	/^    inoremap  <Up>     <NOP>$/;"	m	language:Vim
+<Up>	/Users/peel/.vimrc	/^    noremap   <Up>     <NOP>$/;"	m	language:Vim
+delimitMate_balance_matchpairs	/Users/peel/.dotfiles/.vimrc	/^        let delimitMate_balance_matchpairs=1$/;"	v	language:Vim
+delimitMate_balance_matchpairs	/Users/peel/.vimrc	/^        let delimitMate_balance_matchpairs=1$/;"	v	language:Vim
+delimitMate_expand_cr	/Users/peel/.dotfiles/.vimrc	/^        let delimitMate_expand_cr=1$/;"	v	language:Vim
+delimitMate_expand_cr	/Users/peel/.vimrc	/^        let delimitMate_expand_cr=1$/;"	v	language:Vim
+delimitMate_expand_space	/Users/peel/.dotfiles/.vimrc	/^        let delimitMate_expand_space=1$/;"	v	language:Vim
+delimitMate_expand_space	/Users/peel/.vimrc	/^        let delimitMate_expand_space=1$/;"	v	language:Vim
+g:colors_name	/Users/peel/.dotfiles/.vim/colors/molokai.vim	/^let g:colors_name="molokai"$/;"	v	language:Vim
+g:colors_name	/Users/peel/.vim/colors/molokai.vim	/^let g:colors_name="molokai"$/;"	v	language:Vim
+g:ctrlp_custom_ignore	/Users/peel/.dotfiles/.vimrc	/^        let g:ctrlp_custom_ignore = '\\v[\\\/](\\.git|\\.hg|\\.svn)$'$/;"	v	language:Vim
+g:ctrlp_custom_ignore	/Users/peel/.vimrc	/^        let g:ctrlp_custom_ignore = '\\v[\\\/](\\.git|\\.hg|\\.svn)$'$/;"	v	language:Vim
+g:easytags_include_members	/Users/peel/.dotfiles/.vimrc	/^        let g:easytags_include_members=1$/;"	v	language:Vim
+g:easytags_include_members	/Users/peel/.vimrc	/^        let g:easytags_include_members=1$/;"	v	language:Vim
+g:easytags_python_enabled	/Users/peel/.dotfiles/.vimrc	/^        let g:easytags_python_enabled=1$/;"	v	language:Vim
+g:easytags_python_enabled	/Users/peel/.vimrc	/^        let g:easytags_python_enabled=1$/;"	v	language:Vim
+g:easytags_python_script	/Users/peel/.dotfiles/.vimrc	/^        let g:easytags_python_script=1$/;"	v	language:Vim
+g:easytags_python_script	/Users/peel/.vimrc	/^        let g:easytags_python_script=1$/;"	v	language:Vim
+g:enable_floatingwindow	/Users/peel/.dotfiles/.vimrc	/^            let g:enable_floatingwindow=1$/;"	v	language:Vim
+g:enable_floatingwindow	/Users/peel/.vimrc	/^            let g:enable_floatingwindow=1$/;"	v	language:Vim
+g:indent_guides_auto_colors	/Users/peel/.dotfiles/.vimrc	/^        let g:indent_guides_auto_colors = 0$/;"	v	language:Vim
+g:indent_guides_auto_colors	/Users/peel/.vimrc	/^        let g:indent_guides_auto_colors = 0$/;"	v	language:Vim
+g:indent_guides_enable_on_vim_startup	/Users/peel/.dotfiles/.vimrc	/^        let g:indent_guides_enable_on_vim_startup=1$/;"	v	language:Vim
+g:indent_guides_enable_on_vim_startup	/Users/peel/.vimrc	/^        let g:indent_guides_enable_on_vim_startup=1$/;"	v	language:Vim
+g:indent_guides_guide_size	/Users/peel/.dotfiles/.vimrc	/^        let g:indent_guides_guide_size=1$/;"	v	language:Vim
+g:indent_guides_guide_size	/Users/peel/.vimrc	/^        let g:indent_guides_guide_size=1$/;"	v	language:Vim
+g:indent_guides_start_level	/Users/peel/.dotfiles/.vimrc	/^        let g:indent_guides_start_level=2$/;"	v	language:Vim
+g:indent_guides_start_level	/Users/peel/.vimrc	/^        let g:indent_guides_start_level=2$/;"	v	language:Vim
+g:jde_tab_cfu	/Users/peel/.dotfiles/.vimrc	/^            let g:jde_tab_cfu=1$/;"	v	language:Vim
+g:jde_tab_cfu	/Users/peel/.vimrc	/^            let g:jde_tab_cfu=1$/;"	v	language:Vim
+g:Powerline#Segments#syntastic#segments	/Users/peel/.dotfiles/.vim/bundle/vim-powerline/autoload/Powerline/Segments/syntastic.vim	/^let g:Powerline#Segments#syntastic#segments = Pl#Segment#Init('syntastic',$/;"	v	language:Vim
+g:Powerline_loaded	/Users/peel/.dotfiles/.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	let g:Powerline_loaded = 1$/;"	v	language:Vim
+g:Powerline_symbols	/Users/peel/.dotfiles/.vimrc	/^        let g:Powerline_symbols='fancy'$/;"	v	language:Vim
+g:Powerline_symbols	/Users/peel/.vimrc	/^        let g:Powerline_symbols='fancy'$/;"	v	language:Vim
+g:snips_trigger_key	/Users/peel/.dotfiles/.vimrc	/^        let g:snips_trigger_key=',,s'$/;"	v	language:Vim
+g:snips_trigger_key	/Users/peel/.vimrc	/^        let g:snips_trigger_key=',,s'$/;"	v	language:Vim
+g:snips_trigger_key_backwards	/Users/peel/.dotfiles/.vimrc	/^        let g:snips_trigger_key_backwards=',,s'$/;"	v	language:Vim
+g:snips_trigger_key_backwards	/Users/peel/.vimrc	/^        let g:snips_trigger_key_backwards=',,s'$/;"	v	language:Vim
+g:syntastic_auto_jump	/Users/peel/.dotfiles/.vimrc	/^        let g:syntastic_auto_jump=1$/;"	v	language:Vim
+g:syntastic_auto_jump	/Users/peel/.vimrc	/^        let g:syntastic_auto_jump=1$/;"	v	language:Vim
+g:syntastic_auto_loc_list	/Users/peel/.dotfiles/.vimrc	/^        let g:syntastic_auto_loc_list=1$/;"	v	language:Vim
+g:syntastic_auto_loc_list	/Users/peel/.vimrc	/^        let g:syntastic_auto_loc_list=1$/;"	v	language:Vim
+g:syntastic_check_on_open	/Users/peel/.dotfiles/.vimrc	/^        let g:syntastic_check_on_open=1$/;"	v	language:Vim
+g:syntastic_check_on_open	/Users/peel/.vimrc	/^        let g:syntastic_check_on_open=1$/;"	v	language:Vim
+g:syntastic_enable_signs	/Users/peel/.dotfiles/.vimrc	/^        let g:syntastic_enable_signs=1$/;"	v	language:Vim
+g:syntastic_enable_signs	/Users/peel/.vimrc	/^        let g:syntastic_enable_signs=1$/;"	v	language:Vim
+g:syntastic_stl_format	/Users/peel/.dotfiles/.vimrc	/^        let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'$/;"	v	language:Vim
+g:syntastic_stl_format	/Users/peel/.vimrc	/^        let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'$/;"	v	language:Vim
+g:tagbar_autofocus	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_autofocus=1$/;"	v	language:Vim
+g:tagbar_autofocus	/Users/peel/.vimrc	/^        let g:tagbar_autofocus=1$/;"	v	language:Vim
+g:tagbar_autoshowtag	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_autoshowtag=1$/;"	v	language:Vim
+g:tagbar_autoshowtag	/Users/peel/.vimrc	/^        let g:tagbar_autoshowtag=1$/;"	v	language:Vim
+g:tagbar_ctags_bin	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_ctags_bin='\/usr\/local\/Cellar\/ctags\/5.8\/bin\/ctags'$/;"	v	language:Vim
+g:tagbar_ctags_bin	/Users/peel/.vimrc	/^        let g:tagbar_ctags_bin='\/usr\/local\/Cellar\/ctags\/5.8\/bin\/ctags'$/;"	v	language:Vim
+g:tagbar_expand	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_expand=1$/;"	v	language:Vim
+g:tagbar_expand	/Users/peel/.vimrc	/^        let g:tagbar_expand=1$/;"	v	language:Vim
+g:tagbar_foldlevel	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_foldlevel=2$/;"	v	language:Vim
+g:tagbar_foldlevel	/Users/peel/.vimrc	/^        let g:tagbar_foldlevel=2$/;"	v	language:Vim
+g:tagbar_ironchars	/Users/peel/.dotfiles/.vimrc	/^        let g:tagbar_ironchars=['▾', '▸']$/;"	v	language:Vim
+g:tagbar_ironchars	/Users/peel/.vimrc	/^        let g:tagbar_ironchars=['▾', '▸']$/;"	v	language:Vim
+g:vjde_completion_key	/Users/peel/.dotfiles/.vimrc	/^            let g:vjde_completion_key='<c-space>'$/;"	v	language:Vim
+g:vjde_completion_key	/Users/peel/.vimrc	/^            let g:vjde_completion_key='<c-space>'$/;"	v	language:Vim
+g:vjde_completion_key	/Users/peel/.vimrc	/^    let g:vjde_completion_key='<tab>'$/;"	v	language:Vim
+g:vjde_javadoc_path	/Users/peel/.dotfiles/.vimrc	/^            let g:vjde_javadoc_path='\/Users\/peel\/Dev\/docs\/api\/'$/;"	v	language:Vim
+g:vjde_javadoc_path	/Users/peel/.vimrc	/^            let g:vjde_javadoc_path='\/Users\/peel\/Dev\/docs\/api\/'$/;"	v	language:Vim
+g:vjde_lib_path	/Users/peel/.dotfiles/.vimrc	/^            let g:vjde_lib_path='\/Users\/peel\/Dev\/docs\/api\/'$/;"	v	language:Vim
+g:vjde_lib_path	/Users/peel/.vimrc	/^            let g:vjde_lib_path='\/Users\/peel\/Dev\/docs\/api\/'$/;"	v	language:Vim
+g:vjde_utils_setup	/Users/peel/.dotfiles/.vimrc	/^            let g:vjde_utils_setup=0$/;"	v	language:Vim
+g:vjde_utils_setup	/Users/peel/.vimrc	/^            let g:vjde_utils_setup=0$/;"	v	language:Vim
+InitializeTagDirectory	/Users/peel/.dotfiles/.vimrc	/^        function! InitializeTagDirectory()$/;"	f	language:Vim
+InitializeTagDirectory	/Users/peel/.vimrc	/^        function! InitializeTagDirectory()$/;"	f	language:Vim
+java_comment_strings	/Users/peel/.dotfiles/.vimrc	/^    let java_comment_strings=1$/;"	v	language:Vim
+java_comment_strings	/Users/peel/.vimrc	/^    let java_comment_strings=1$/;"	v	language:Vim
+java_highlight_all	/Users/peel/.dotfiles/.vimrc	/^    let java_highlight_all=1$/;"	v	language:Vim
+java_highlight_all	/Users/peel/.vimrc	/^    let java_highlight_all=1$/;"	v	language:Vim
+java_highlight_debug	/Users/peel/.dotfiles/.vimrc	/^    let java_highlight_debug=1$/;"	v	language:Vim
+java_highlight_debug	/Users/peel/.vimrc	/^    let java_highlight_debug=1$/;"	v	language:Vim
+java_highlight_functions	/Users/peel/.dotfiles/.vimrc	/^    let java_highlight_functions="style"$/;"	v	language:Vim
+java_highlight_functions	/Users/peel/.dotfiles/.vimrc	/^    let java_highlight_functions=1$/;"	v	language:Vim
+java_highlight_functions	/Users/peel/.vimrc	/^    let java_highlight_functions="style"$/;"	v	language:Vim
+java_highlight_functions	/Users/peel/.vimrc	/^    let java_highlight_functions=1$/;"	v	language:Vim
+java_highlight_java_lang_ids	/Users/peel/.dotfiles/.vimrc	/^    let java_highlight_java_lang_ids=1$/;"	v	language:Vim
+java_highlight_java_lang_ids	/Users/peel/.vimrc	/^    let java_highlight_java_lang_ids=1$/;"	v	language:Vim
+java_ignore_javadoc	/Users/peel/.dotfiles/.vimrc	/^    let java_ignore_javadoc=1$/;"	v	language:Vim
+java_ignore_javadoc	/Users/peel/.vimrc	/^    let java_ignore_javadoc=1$/;"	v	language:Vim
+java_mark_braces_in_parens_as_errors	/Users/peel/.dotfiles/.vimrc	/^    let java_mark_braces_in_parens_as_errors=1$/;"	v	language:Vim
+java_mark_braces_in_parens_as_errors	/Users/peel/.vimrc	/^    let java_mark_braces_in_parens_as_errors=1$/;"	v	language:Vim
+mapleader	/Users/peel/.dotfiles/.vimrc	/^    let mapleader = ","$/;"	v	language:Vim
+mapleader	/Users/peel/.vimrc	/^    let mapleader = ","$/;"	v	language:Vim
+NERDCommentWholeLinesInVMode	/Users/peel/.dotfiles/.vimrc	/^        let NERDCommentWholeLinesInVMode=2$/;"	v	language:Vim
+NERDCommentWholeLinesInVMode	/Users/peel/.vimrc	/^        let NERDCommentWholeLinesInVMode=2$/;"	v	language:Vim
+NERDRemoveExtraSpaces	/Users/peel/.dotfiles/.vimrc	/^        let NERDRemoveExtraSpaces=1$/;"	v	language:Vim
+NERDRemoveExtraSpaces	/Users/peel/.vimrc	/^        let NERDRemoveExtraSpaces=1$/;"	v	language:Vim
+NERDSpaceDelims	/Users/peel/.dotfiles/.vimrc	/^        let NERDSpaceDelims=1$/;"	v	language:Vim
+NERDSpaceDelims	/Users/peel/.vimrc	/^        let NERDSpaceDelims=1$/;"	v	language:Vim
+NERDTreeChDirMode	/Users/peel/.dotfiles/.vimrc	/^        let NERDTreeChDirMode=2$/;"	v	language:Vim
+NERDTreeChDirMode	/Users/peel/.vimrc	/^        let NERDTreeChDirMode=2$/;"	v	language:Vim
+NERDTreeDirArrows	/Users/peel/.dotfiles/.vimrc	/^        let NERDTreeDirArrows=1$/;"	v	language:Vim
+NERDTreeDirArrows	/Users/peel/.vimrc	/^        let NERDTreeDirArrows=1$/;"	v	language:Vim
+NERDTreeShowBookmarks	/Users/peel/.dotfiles/.vimrc	/^        let NERDTreeShowBookmarks=1$/;"	v	language:Vim
+NERDTreeShowBookmarks	/Users/peel/.vimrc	/^        let NERDTreeShowBookmarks=1$/;"	v	language:Vim
+NERDTreeShowHidden	/Users/peel/.dotfiles/.vimrc	/^        let NERDTreeShowHidden=1$/;"	v	language:Vim
+NERDTreeShowHidden	/Users/peel/.vimrc	/^        let NERDTreeShowHidden=1$/;"	v	language:Vim
+NERDTreeShowLineNumbers	/Users/peel/.dotfiles/.vimrc	/^        let NERDTreeShowLineNumbers=1$/;"	v	language:Vim
+NERDTreeShowLineNumbers	/Users/peel/.vimrc	/^        let NERDTreeShowLineNumbers=1$/;"	v	language:Vim
+Powerline	/Users/peel/.dotfiles/.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	augroup Powerline$/;"	a	language:Vim
+s:molokai_original	/Users/peel/.dotfiles/.vim/colors/molokai.vim	/^    let s:molokai_original = 0$/;"	v	language:Vim
+s:molokai_original	/Users/peel/.dotfiles/.vim/colors/molokai.vim	/^    let s:molokai_original = g:molokai_original$/;"	v	language:Vim
+s:molokai_original	/Users/peel/.vim/colors/molokai.vim	/^    let s:molokai_original = 0$/;"	v	language:Vim
+s:molokai_original	/Users/peel/.vim/colors/molokai.vim	/^    let s:molokai_original = g:molokai_original$/;"	v	language:Vim
