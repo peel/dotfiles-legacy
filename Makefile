@@ -37,7 +37,7 @@ tools:
 #}
 
 #Shell{
-		brew install tmux midnight-commander lynx
+		brew install tmux midnight-commander lynx ack
 		gem install tmuxinator
 #}
 

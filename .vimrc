@@ -26,6 +26,12 @@
         set nobackup
         set directory=/tmp// 		" prepend(^=) $HOME/.tmp/ to default path; use full path as backup filename(//)
     " }
+    
+    " Setup Vundle{
+        set rtp+=~/.vim/bundle/vundle/
+        call vundle#rc()
+        Bundle 'gmarik/vundle'
+    "
 " }
 
 " Visual{
@@ -47,7 +53,7 @@
 
     set foldenable 			" Turn on folding
     set foldcolumn=1
-    set foldmethod=indent " Fold on syntax
+    set foldmethod=syntax " Fold on syntax
     set foldlevel=2 " Don't autofold anything (but I can still fold manually)
 
     set mouse-=a   			" Disable mouse
@@ -75,8 +81,13 @@
 
     set wildmenu
 
+    " Colors
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'tomasr/molokai'
+
     syntax on
-    colorscheme molokai
+    set background=dark
+    colorscheme solarized 
 " }
 
 " Formatting{
@@ -92,19 +103,36 @@
 
 " Plugins{
 
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-    Bundle 'gmarik/vundle'
 
     " Utility{
         Bundle 'tpope/vim-surround'
-        Bundle 'ervandew/supertab'
         Bundle 'vim-scripts/java.vim'
+        Bundle 'vim-scripts/javacomplete'
         Bundle 'Soares/rainbow.vim'
         Bundle 'othree/html5.vim'
-        Bundle 'davetron5000/javax-javadoc-vim'
         Bundle 'othree/xml.vim'
-        Bundle 'vim-scripts/AutoComplPop'
+    " }
+    
+    " NeoComplCache{
+        Bundle 'Shougo/neocomplcache'
+        let g:acp_enableAtStartup = 0
+        let g:neocomplcache_enable_at_startup=1
+        let g:neocomplcache_enable_smart_case = 1
+        let g:neocomplcache_enable_camel_case_completion = 1
+        let g:neocomplcache_enable_underbar_completion = 1
+        inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+        inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+        inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+        inoremap <expr><C-y>  neocomplcache#close_popup()
+        inoremap <expr><C-e>  neocomplcache#cancel_popup()
+        imap  <silent><expr><tab>  neocomplcache#sources#snippets_complete#expandable() ? "\<plug>(neocomplcache_snippets_expand)" : (pumvisible() ? "\<c-e>" : "\<tab>")
+        smap  <tab>  <right><plug>(neocomplcache_snippets_jump) 
+        inoremap <expr><c-e>     neocomplcache#complete_common_string()
+    "}
+    
+    " Supertab{
+        " Bundle 'ervandew/supertab'
+        " let g:SuperTabDefaultCompletionType = "context"
     " }
 
     " ruby{
@@ -129,7 +157,9 @@
     " vim-powerline{
         Bundle 'Lokaltog/vim-powerline'
         set laststatus=2		" always display statusline for PowerLine
-        let g:Powerline_symbols='fancy'
+        let g:Powerline_symbols='compatible'
+        let g:Powerline_theme='skwp'
+        let g:Powerline_colorscheme='skwp'
     "}
 
     " vimux{
@@ -138,7 +168,7 @@
 
     " Graphic Undo{
         Bundle 'sjl/gundo.vim'
-        nnoremap <silent> <F6> :GundoToggle<CR>
+        nnoremap <silent> <leader>u :GundoToggle<CR>
     " } 
 
     " Indent Guides{
@@ -147,8 +177,8 @@
         let g:indent_guides_enable_on_vim_startup=1
         let g:indent_guides_guide_size=1
         let g:indent_guides_auto_colors = 0
-        autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=235 ctermbg=235
-        autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=237 ctermbg=237
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=240 ctermbg=240
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=240 ctermbg=240
     " }
 
     " Syntastic{
@@ -267,18 +297,14 @@
         Bundle 'dareni/vim-maven-ide'
 
         " VJDE{
-            Bundle 'vim-scripts/Vim-JDE'
-            let g:vjde_completion_key='<c-space>'
-            let g:jde_tab_cfu=1
-            let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
-            let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
-            let g:vjde_utils_setup=0
-            let g:enable_floatingwindow=1
+            " Bundle 'vim-scripts/Vim-JDE'
+            " let g:jde_tab_cfu=1
+            " let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
+            " let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
+            " let g:vjde_utils_setup=0
+            " let g:enable_floatingwindow=1
         "}
     " }
-
-    " Colors
-    Bundle 'tomasr/molokai'
     
 " }
 
@@ -309,11 +335,10 @@
 " }
 
 " Java{
-    autocmd FileType java let g:SuperTabDefaultCompletionType="<c-x><c-u>" 
-    autocmd FileType java set cfu=VjdeCompletionFun
-    let g:vjde_completion_key='<tab>'
+    " autocmd FileType java set cfu=VjdeCompletionFun
+    " let g:vjde_completion_key='<tab>'
 
-    autocmd FileType java set tags=~/.vim/tags/java.tags
+
     set si
     set shiftwidth=4
 
