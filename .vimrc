@@ -177,8 +177,8 @@
         let g:indent_guides_enable_on_vim_startup=1
         let g:indent_guides_guide_size=1
         let g:indent_guides_auto_colors = 0
-        autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=240 ctermbg=240
-        autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=240 ctermbg=240
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black ctermbg=black
+        autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
     " }
 
     " Syntastic{
