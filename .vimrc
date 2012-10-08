@@ -120,6 +120,7 @@
         let g:neocomplcache_enable_smart_case = 1
         let g:neocomplcache_enable_camel_case_completion = 1
         let g:neocomplcache_enable_underbar_completion = 1
+        inoremap <expr><CR> neocomplcache#smart_close_popup() . “\<CR>”
         inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
         inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
         inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
@@ -164,6 +165,21 @@
 
     " vimux{
         Bundle 'benmills/vimux'
+       
+        " Prompt for a command to run
+        map rr :PromptVimTmuxCommand<CR>
+        
+        " Run last command executed by RunVimTmuxCommand
+        map rl :RunLastVimTmuxCommand<CR>
+        
+        " Inspect runner pane
+        map rm :InspectVimTmuxRunner<CR>
+        
+        " Close all other tmux panes in current window
+        map rm :CloseVimTmuxPanes<CR>
+        
+        " Interrupt any command running in the runner pane
+        map rs :InterruptVimTmuxRunner<CR>
     " }
 
     " Graphic Undo{
@@ -297,12 +313,12 @@
         Bundle 'dareni/vim-maven-ide'
 
         " VJDE{
-            " Bundle 'vim-scripts/Vim-JDE'
-            " let g:jde_tab_cfu=1
-            " let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
-            " let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
-            " let g:vjde_utils_setup=0
-            " let g:enable_floatingwindow=1
+            Bundle 'vim-scripts/Vim-JDE'
+            let g:jde_tab_cfu=1
+            let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
+            let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
+            let g:vjde_utils_setup=0
+            let g:enable_floatingwindow=1
         "}
     " }
     
