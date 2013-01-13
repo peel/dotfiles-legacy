@@ -4,10 +4,10 @@
 SOFT =  vim vimrc zsh tmux.conf
 
 link: $(SOFT)
-	@for f in $(SOFT) ; do ln -s ~/.dotfiles/$$f ~/.$$f; done
+	@for f in $(SOFT) ; do ln -s ~/.dotfiles/$$f ~/$$f; done
 
 unlink: $(SOFT)
-	@for f in $(SOFT) ; do rm ~/.$$f; done
+	@for f in $(SOFT) ; do rm ~/$$f; done
 
 update:
 	git submodule update --init
