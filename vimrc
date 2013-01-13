@@ -83,7 +83,7 @@
 
     " Colors
     Bundle 'altercation/vim-colors-solarized'
-    Bundle 'tomasr/molokai'
+    "Bundle 'tomasr/molokai'
 
     syntax on
     set background=dark
@@ -110,7 +110,6 @@
         Bundle 'vim-scripts/javacomplete'
         Bundle 'Soares/rainbow.vim'
         Bundle 'othree/html5.vim'
-        Bundle 'othree/xml.vim'
     " }
     
     " NeoComplCache{
@@ -159,8 +158,8 @@
         Bundle 'Lokaltog/vim-powerline'
         set laststatus=2		" always display statusline for PowerLine
         let g:Powerline_symbols='compatible'
-        let g:Powerline_theme='skwp'
-        let g:Powerline_colorscheme='skwp'
+        let g:Powerline_theme='solarized256'
+        let g:Powerline_colorscheme='solarized256'
     "}
 
     " vimux{
@@ -248,13 +247,6 @@
         let NERDTreeShowLineNumbers=1
         let NERDTreeDirArrows=1
     "}
-
-    " GoldenRatio {
-        Bundle 'roman/golden-ratio'
-        if &diff  " disable golden ration in diff
-              let g:loaded_golden_ratio=1
-        endif
-    " }
 
     " EasyTags{
         Bundle 'xolox/vim-easytags'
