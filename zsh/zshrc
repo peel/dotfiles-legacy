@@ -5,7 +5,7 @@
 #
 
 # first include of the environment
-source $HOME/.config/zsh/environment.zsh
+source $HOME/dotfiles/zsh/environment.zsh
 
 typeset -ga sources
 sources+="$ZSH_CONFIG/environment.zsh"
