@@ -1,11 +1,5 @@
-[submodule ".zsh"]
-	path = .zsh
-	url = git@github.com:peel/zshrc
 [submodule "zsh"]
 	path = zsh
-	url = git@github.com:peel/zshrc
-[submodule "zshrc"]
-	path = zshrc
 	url = git@github.com:peel/zshrc
 [submodule "mc"]
 	path = mc
