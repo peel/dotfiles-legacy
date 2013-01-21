@@ -9,7 +9,9 @@
     set autoread  
     set encoding=utf-8
     set timeoutlen=250  		" Time to wait after ESC (default causes an annoying delay)
-    set clipboard+=unnamed  	" Yanks go on clipboard instead.
+    if $TMUX == ''
+        set clipboard+=unnamed  	" Yanks go on clipboard instead.
+    endif
     set pastetoggle=<F10> 		" toggle between paste and normal: for 'safer' pasting from keyboard
     set tags=~/.vim/tags/.tags;$HOME 		" walk directory tree upto $HOME looking for tags
     map <C-`> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
@@ -155,11 +157,12 @@
     "}
 
     " vim-powerline{
-        Bundle 'Lokaltog/vim-powerline'
-        set laststatus=2		" always display statusline for PowerLine
-        let g:Powerline_symbols='compatible'
-        let g:Powerline_theme='solarized256'
-        let g:Powerline_colorscheme='solarized256'
+        " Bundle 'Lokaltog/vim-powerline'
+        Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+         set laststatus=2		" always display statusline for PowerLine
+         let g:Powerline_symbols='compatible'
+         let g:Powerline_theme='solarized256'
+         let g:Powerline_colorscheme='solarized256'
     "}
 
     " vimux{
@@ -240,7 +243,7 @@
 
     " NERDTree{
         Bundle 'scrooloose/nerdtree' 
-        nnoremap <Leader>d :NERDTreeToggle<CR>
+        nnoremap <Leader>m :NERDTreeToggle<CR>
         let NERDTreeChDirMode=2
         let NERDTreeShowBookmarks=1
         let NERDTreeShowHidden=1
@@ -285,7 +288,7 @@
         let g:tagbar_foldlevel=2
         let g:tagbar_ironchars=['▾', '▸']
         let g:tagbar_autoshowtag=1
-        nmap <silent>  <Leader> t :TagbarToggle<CR>
+        nmap <silent>  <Leader>. :TagbarToggle<CR>
     "}
 
     " Session management like a boss{
@@ -300,17 +303,17 @@
     " }
 
     " Maven-ide related {
-        Bundle 'vim-scripts/yavdb'
-        Bundle 'vim-scripts/project.tar.gz'
-        Bundle 'dareni/vim-maven-ide'
+        " Bundle 'vim-scripts/yavdb'
+        " Bundle 'vim-scripts/project.tar.gz'
+        " Bundle 'dareni/vim-maven-ide'
 
         " VJDE{
-            Bundle 'vim-scripts/Vim-JDE'
-            let g:jde_tab_cfu=1
-            let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
-            let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
-            let g:vjde_utils_setup=0
-            let g:enable_floatingwindow=1
+            " Bundle 'vim-scripts/Vim-JDE'
+            " let g:jde_tab_cfu=1
+            " let g:vjde_javadoc_path='/Users/peel/Dev/docs/api/'
+            " let g:vjde_lib_path='/Users/peel/Dev/docs/api/'
+            " let g:vjde_utils_setup=0
+            " let g:enable_floatingwindow=1
         "}
     " }
     

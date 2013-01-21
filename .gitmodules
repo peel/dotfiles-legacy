@@ -4,3 +4,6 @@
 [submodule "mc"]
 	path = mc
 	url = git@github.com:peel/mc
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = git@github.com:gmarik/vundle
