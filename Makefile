@@ -6,9 +6,11 @@ SOFT =  vim vimrc zsh tmux.conf
 link: $(SOFT)
 	@for f in $(SOFT) ; do ln -s ~/dotfiles/$$f ~/.$$f; done
 	ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+	ln -s ~/dotfiles/powerline ~/.config/powerline
 
 unlink: $(SOFT)
 	@for f in $(SOFT) ; do rm ~/.$$f; done
+	rm ~/.zshrc ~/.config/powerline
 
 update:
 	git submodule update --init
@@ -31,7 +33,9 @@ tools:
 	brew install jboss glassfish tomcat   #server stuff
 	brew install mongodb                  #database stuff
 	brew install scalate akka giter8      #frameworks
+	brew install python
 
+  pip install --user git+git://github.com/Lokaltog/powerline #powerline
 	alias lynx="lynx -vikeys -tna -nocolor -number_fields" 
 
 install: 

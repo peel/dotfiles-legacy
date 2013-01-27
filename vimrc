@@ -121,7 +121,7 @@
         let g:neocomplcache_enable_smart_case = 1
         let g:neocomplcache_enable_camel_case_completion = 1
         let g:neocomplcache_enable_underbar_completion = 1
-        inoremap <expr><CR> neocomplcache#smart_close_popup() . “\<CR>”
+        " inoremap <expr><CR> neocomplcache#smart_close_popup() . “\<CR>”
         inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
         inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
         inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
@@ -157,12 +157,8 @@
     "}
 
     " vim-powerline{
-        " Bundle 'Lokaltog/vim-powerline'
-        Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-         set laststatus=2		" always display statusline for PowerLine
-         let g:Powerline_symbols='compatible'
-         let g:Powerline_theme='solarized256'
-         let g:Powerline_colorscheme='solarized256'
+        python from powerline.bindings.vim import source_plugin; source_plugin()
+        set laststatus=2		" always display statusline for PowerLine
     "}
 
     " vimux{
