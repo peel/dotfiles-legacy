@@ -38,6 +38,7 @@
 
 " Visual{
     set t_Co=256
+    set relativenumber
     set number
     set ruler			" show the cursor position all the time
     set showcmd			" display incomplete commands
